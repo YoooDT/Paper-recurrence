@@ -18,15 +18,16 @@ json_dict = {
 
 
 
-
+# 这里是你的txt文件的读取
 with open('train.txt','r') as f:
     data = f.readlines()
 
 bnd_id = bnd_id_start
 
-for d in data[10000:13000]:
+
+for d in data:
     content = d.split(" ")
-    filename = content[0].split("/")[1]
+    filename = content[0].split("/")[1]     #这里可能修改，txt文件每一行第一个属性是图片路径，通过split()函数把图像名分离出来就行
     img = cv2.imread(content[0])
     try:
         height,width = img.shape[0],img.shape[1]
@@ -78,7 +79,7 @@ for d in data[10000:13000]:
     #
 #定义categories
 
-
+#你得类的名字(cid,cate)对应
 classes = ['0','1','2','3','4','5','6','7','8','9']
 
 for i in range(len(classes)):
@@ -100,4 +101,3 @@ json_str = json.dumps(json_dict)
 json_fp.write(json_str)
 json_fp.close()
 
-print(times)
