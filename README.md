@@ -6,3 +6,5 @@ Recurrence of some small algorithms
 2.[txt2coco(yolo格式转coco格式)](https://github.com/Detxie/Paper-recurrence/tree/master/txt2coco(yolo%E6%A0%BC%E5%BC%8F%E8%BD%ACcoco%E6%A0%BC%E5%BC%8F))
 
 3.[NMS(非极大值抑制)](https://github.com/Detxie/Paper-recurrence/tree/master/NMS(%E9%9D%9E%E6%9E%81%E5%A4%A7%E5%80%BC%E6%8A%91%E5%88%B6))
+
+4.[IOU(交并比)](https://github.com/Detxie/Paper-recurrence/tree/master/IOU(%E4%BA%A4%E5%B9%B6%E6%AF%94))
